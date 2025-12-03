@@ -1,0 +1,13 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "name": "Utxix Dark",
+    "type": "dark",
+    "colors": {
+      "editor.background": "#0f0f17",
+      "editor.foreground": "#e0e0ff",
+      "activityBar.background": "#0f0f17",
+      "sideBar.background": "#14141e",
+      "statusBar.background": "#1a1a2e",
+      "editorLineNumber.foreground": "#5a5a7e"
+    }
+  }

@@ -1,0 +1,7 @@
+name = "sCrypt"
+scope = "source.scrypt"
+file-extensions = ["scrypt.ts"]
+injection-regex = "scrypt"
+
+[grammar]
+tree-sitter = { name = "typescript", scope-mapping = { "source.ts" = "source.scrypt" } }
