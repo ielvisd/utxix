@@ -1,13 +1,19 @@
 {
-    "$schema": "vscode://schemas/color-theme",
-    "name": "Utxix Dark",
-    "type": "dark",
-    "colors": {
-      "editor.background": "#0f0f17",
-      "editor.foreground": "#e0e0ff",
-      "activityBar.background": "#0f0f17",
-      "sideBar.background": "#14141e",
-      "statusBar.background": "#1a1a2e",
-      "editorLineNumber.foreground": "#5a5a7e"
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Utxix",
+  "author": "ielvisd",
+  "themes": [
+    {
+      "name": "Utxix Dark",
+      "appearance": "dark",
+      "style": {
+        "editor.background": "#0f0f17",
+        "editor.foreground": "#e0e0ff",
+        "activityBar.background": "#0f0f17",
+        "sideBar.background": "#14141e",
+        "statusBar.background": "#1a1a2e",
+        "editorLineNumber.foreground": "#5a5a7e"
+      }
     }
-  }
+  ]
+}

@@ -1,18 +1,15 @@
-name = "Utxix"
 id = "utxix"
+name = "Utxix"
 version = "0.1.0"
-description = "AI-powered Bitcoin covenant & dApp editor"
+schema_version = 1
+description = "AI-powered Bitcoin covenant & dApp editor for sCrypt"
 repository = "https://github.com/ielvisd/utxix"
 authors = ["ielvisd"]
 
-[
-language_server
-]
-command = "echo"   # placeholder — we’ll replace later with real LSP
+[slash_commands.covenant]
+description = "Generate an sCrypt Bitcoin covenant with template code and documentation context"
+requires_argument = true
 
-[[
-languages
-]]
-name = "scrypt"
-scope = "source.scrypt"
-file-extensions = ["scrypt.ts"]
+[slash_commands.explain]
+description = "Explain selected sCrypt code in plain English with Script bytecode breakdown"
+requires_argument = true

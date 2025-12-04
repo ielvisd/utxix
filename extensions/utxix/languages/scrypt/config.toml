@@ -1,0 +1,5 @@
+name = "sCrypt"
+grammar = "typescript"  # Fallback to TS grammar (sCrypt is TS subset)
+path_suffixes = ["scrypt.ts", "scrypt"]
+line_comments = ["//"]
+block_comments = ["/*", "*/"]

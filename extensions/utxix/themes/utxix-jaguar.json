@@ -1,0 +1,36 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.2.0.json",
+  "name": "Utxix Jaguar",
+  "author": "ielvisd",
+  "themes": [
+    {
+      "name": "Utxix Jaguar",
+      "appearance": "dark",
+      "style": {
+        "background": "#0b0b14",
+        "editor.background": "#0f0f1a",
+        "sidebar.background": "#0a0a12",
+        "status_bar.background": "#11111f",
+        "conflict": "#ff5555",
+        "created": "#50fa7b",
+        "deleted": "#ff5555",
+        "error": "#ff5555",
+        "hidden": "#6272a4",
+        "hint": "#6272a4",
+        "ignored": "#44475a",
+        "info": "#8be9fd",
+        "modified": "#f1fa8c",
+        "predictive": "#6272a4",
+        "renamed": "#8be9fd",
+        "success": "#50fa7b",
+        "text": "#f8f8f2",
+        "untracked": "#6272a4",
+        "warning": "#ffb86c",
+        "property": "#ff79c6",
+        "type": "#8be9fd",
+        "keyword": "#ff5555",
+        "function.builtin": "#ff5555"
+      }
+    }
+  ]
+}
