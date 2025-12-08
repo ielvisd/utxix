@@ -866,6 +866,12 @@ impl AcpThreadView {
         }
     }
 
+    pub fn set_prompt_text(&mut self, text: &str, window: &mut Window, cx: &mut Context<Self>) {
+        self.message_editor.update(cx, |editor, cx| {
+            editor.set_text(text, window, cx);
+        });
+    }
+
     pub fn expand_message_editor(
         &mut self,
         _: &ExpandMessageEditor,

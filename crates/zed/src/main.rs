@@ -637,6 +637,7 @@ pub fn main() {
         markdown_preview::init(cx);
         svg_preview::init(cx);
         onboarding::init(cx);
+        bitcoin_app_wizard::init(app_state.clone(), cx);
         settings_ui::init(cx);
         keymap_editor::init(cx);
         extensions_ui::init(cx);

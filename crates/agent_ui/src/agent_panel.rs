@@ -750,6 +750,20 @@ impl AgentPanel {
         }
     }
 
+    pub fn set_prompt_text(&mut self, text: &str, window: &mut Window, cx: &mut Context<Self>) {
+        if let Some(thread_view) = self.active_thread_view() {
+            thread_view.update(cx, |thread_view, cx| {
+                thread_view.set_prompt_text(text, window, cx);
+            });
+        } else if let Some(text_thread_editor) = self.active_text_thread_editor() {
+            text_thread_editor.update(cx, |editor, cx| {
+                editor.editor().update(cx, |editor, cx| {
+                    editor.set_text(text, window, cx);
+                });
+            });
+        }
+    }
+
     fn new_thread(&mut self, _action: &NewThread, window: &mut Window, cx: &mut Context<Self>) {
         self.new_agent_thread(AgentType::NativeAgent, window, cx);
     }

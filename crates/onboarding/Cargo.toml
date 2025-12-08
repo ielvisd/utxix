@@ -16,6 +16,7 @@ default = []
 
 [dependencies]
 anyhow.workspace = true
+bitcoin_app_wizard.workspace = true
 client.workspace = true
 component.workspace = true
 db.workspace = true

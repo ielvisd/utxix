@@ -1,3 +1,4 @@
+use bitcoin_app_wizard::NewBitcoinApp;
 use gpui::{
     Action, App, Context, Entity, EventEmitter, FocusHandle, Focusable, InteractiveElement,
     ParentElement, Render, Styled, Task, Window, actions,
@@ -21,10 +22,15 @@ actions!(
     ]
 );
 
-const CONTENT: (Section<4>, Section<3>) = (
+const CONTENT: (Section<5>, Section<3>) = (
     Section {
         title: "Get Started",
         entries: [
+            SectionEntry {
+                icon: IconName::Code,
+                title: "New Bitcoin App",
+                action: &NewBitcoinApp,
+            },
             SectionEntry {
                 icon: IconName::Plus,
                 title: "New File",
@@ -187,8 +193,8 @@ impl Render for WelcomePage {
                                     .gap_4()
                                     .child(Vector::square(VectorName::ZedLogo, rems(2.)))
                                     .child(
-                                        div().child(Headline::new("Welcome to Zed")).child(
-                                            Label::new("The editor for what's next")
+                                        div().child(Headline::new("Welcome to utxix")).child(
+                                            Label::new("Build Bitcoin apps with AI")
                                                 .size(LabelSize::Small)
                                                 .color(Color::Muted)
                                                 .italic(),

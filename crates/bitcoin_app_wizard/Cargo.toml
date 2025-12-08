@@ -1,0 +1,23 @@
+[package]
+name = "bitcoin_app_wizard"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/bitcoin_app_wizard.rs"
+
+[dependencies]
+agent_ui.workspace = true
+anyhow.workspace = true
+fs.workspace = true
+gpui.workspace = true
+log.workspace = true
+menu.workspace = true
+notifications.workspace = true
+serde.workspace = true
+ui.workspace = true
+ui_input.workspace = true
+util.workspace = true
+workspace.workspace = true
+zed_actions.workspace = true
+
